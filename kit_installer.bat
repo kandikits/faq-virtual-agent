@@ -11,7 +11,7 @@ REM update below path if required
 SET PY_LOCATION="C:\Python"
 SET PY_VERSION=3.9.8
 SET PY_DOWNLOAD_URL=https://www.python.org/ftp/python/3.9.8/python-3.9.8-amd64.exe
-SET REPO_DOWNLOAD_URL=https://github.com/kandikits/faq-virtual-agent/releases/download/v1.0.0/faq-virtual-agent.zip
+SET REPO_DOWNLOAD_URL=https://github.com/kandikits/faq-virtual-agent/releases/download/v1.0.0/faq-virtual-agent-main.zip
 SET REPO_DEPENDENCIES_URL=https://raw.githubusercontent.com/kandikits/faq-virtual-agent/main/requirements.txt
 SET REPO_NAME=faq-virtual-agent.zip
 where /q python
