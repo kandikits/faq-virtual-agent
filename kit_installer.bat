@@ -14,6 +14,8 @@ SET PY_DOWNLOAD_URL=https://www.python.org/ftp/python/3.9.8/python-3.9.8-amd64.e
 SET REPO_DOWNLOAD_URL=https://github.com/kandikits/faq-virtual-agent/releases/download/v1.0.0/faq-virtual-agent-main.zip
 SET REPO_DEPENDENCIES_URL=https://raw.githubusercontent.com/kandikits/faq-virtual-agent/main/requirements.txt
 SET REPO_NAME=faq-virtual-agent.zip
+SET EXTRACTED_REPO_DIR=faq-virtual-agent-main
+SET NOTEBOOK_NAME=Virtual Agent for FAQ.ipynb
 where /q python
 IF ERRORLEVEL 1 (
 	ECHO==========================================================================
@@ -59,6 +61,16 @@ IF ERRORLEVEL 1 (
 		)	
 	)
 )
+SET /P CONFIRM=Would you like to run the kit (Y/N)?
+IF /I "%CONFIRM%" NEQ "Y" (
+	ECHO 	To run the kit, follow further instructions of the kit in kandi	
+	ECHO==========================================================================
+) ELSE (
+	ECHO 	Extracting the repo ...	
+	ECHO==========================================================================
+	tar -xvf %REPO_NAME%
+	jupyter notebook "%EXTRACTED_REPO_DIR%\%NOTEBOOK_NAME%"
+)
 PAUSE
 EXIT /B %ERRORLEVEL%
 
@@ -67,8 +79,8 @@ bitsadmin /transfer repo_download_job /download %REPO_DOWNLOAD_URL% "%cd%\%REPO_
 ECHO==========================================================================
 ECHO 	The Kit has been installed successfully
 ECHO==========================================================================
-ECHO 	To run the kit, follow further instructions of the kit in kandi	
-ECHO==========================================================================
+REM ECHO 	To run the kit, follow further instructions of the kit in kandi	
+REM ECHO==========================================================================
 EXIT /B 0
 
 :Install_python_and_modules
