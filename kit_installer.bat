@@ -16,6 +16,7 @@ SET REPO_DEPENDENCIES_URL=https://raw.githubusercontent.com/kandikits/faq-virtua
 SET REPO_NAME=faq-virtual-agent.zip
 SET EXTRACTED_REPO_DIR=faq-virtual-agent-main
 SET NOTEBOOK_NAME=Virtual Agent for FAQ.ipynb
+SET NOTEBOOK_NAME2=Student Counsellor App.ipynb
 where /q python
 IF ERRORLEVEL 1 (
 	ECHO==========================================================================
@@ -70,6 +71,7 @@ IF /I "%CONFIRM%" NEQ "Y" (
 	ECHO==========================================================================
 	tar -xvf %REPO_NAME%
 	jupyter notebook "%EXTRACTED_REPO_DIR%\%NOTEBOOK_NAME%"
+	jupyter notebook "%EXTRACTED_REPO_DIR%\%NOTEBOOK_NAME2%"
 )
 PAUSE
 EXIT /B %ERRORLEVEL%
