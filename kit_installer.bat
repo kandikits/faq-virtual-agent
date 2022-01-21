@@ -70,8 +70,8 @@ IF /I "%CONFIRM%" NEQ "Y" (
 	ECHO 	Extracting the repo ...	
 	ECHO==========================================================================
 	tar -xvf %REPO_NAME%
-	jupyter notebook "%EXTRACTED_REPO_DIR%\%NOTEBOOK_NAME%"
 	jupyter notebook "%EXTRACTED_REPO_DIR%\%NOTEBOOK_NAME2%"
+	jupyter notebook "%EXTRACTED_REPO_DIR%\%NOTEBOOK_NAME%"
 )
 PAUSE
 EXIT /B %ERRORLEVEL%
