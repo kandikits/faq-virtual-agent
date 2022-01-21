@@ -4,6 +4,12 @@
 
 The app requires python3 to be installed in the machine as the programming language used is Python
 
+### Quickstart guide
+
+Refer kits from the link below to jumpstart the app
+
+https://kandi.openweaver.com/collections/nlp/virtual-agent-example-kit
+https://kandi.openweaver.com/collections/nlp/student-counsellor
 
 ### Installation Guide
 
