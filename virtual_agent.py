@@ -82,3 +82,4 @@ class VAModel():
             else:
                 response = self.pred_answer(usr_query)
                 print(f"Response: {response}")
+                print("-----------------")
