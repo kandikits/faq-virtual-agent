@@ -8,8 +8,8 @@ The app requires python3 to be installed in the machine as the programming langu
 
 Refer kits from the link below to jumpstart the app
 
-  https://kandi.openweaver.com/collections/nlp/virtual-agent-example-kit
-  https://kandi.openweaver.com/collections/nlp/student-counsellor
+* https://kandi.openweaver.com/collections/nlp/virtual-agent-example-kit
+* https://kandi.openweaver.com/collections/nlp/student-counsellor
 
 ### Installation Guide
 
